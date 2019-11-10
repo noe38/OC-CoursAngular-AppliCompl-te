@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as firebase from 'firebase';
 
 @Component({
   selector: 'app-root',
@@ -19,5 +20,6 @@ export class AppComponent {
       appId: "1:18646196046:web:a810e535f16fbef1a3481f",
       measurementId: "G-DPV6K2K1EQ"
     };
+    firebase.initializeApp(firebaseConfig);
   }
 }
